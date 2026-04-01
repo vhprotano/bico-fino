@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
   const header = document.querySelector(".site-header");
   const menuButton = document.querySelector(".hamburger");
@@ -9,9 +9,11 @@
   const progressBar = document.querySelector(".scroll-progress");
   const yearNode = document.getElementById("year");
 
+  const currentYear = String(new Date().getFullYear());
   if (yearNode) {
-    yearNode.textContent = String(new Date().getFullYear());
+    yearNode.textContent = currentYear;
   }
+  document.body.setAttribute("data-year", currentYear);
 
   const closeMenu = () => {
     if (!menuButton || !menuOverlay) return;
