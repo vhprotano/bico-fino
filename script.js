@@ -221,6 +221,7 @@
   });
 
   gsap.utils.toArray(".reveal-scale").forEach((node) => {
+    if (node.closest("#litragens")) return;
     gsap.from(node, {
       scale: 0.95,
       opacity: 0,

@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://bicofino.com.br/sitemap.xml
+Sitemap: https://bicofinomosquicida.store/sitemap.xml
